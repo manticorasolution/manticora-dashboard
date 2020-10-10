@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
-	@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;600&display=swap');
 
 	* {
 		margin: 0;
@@ -16,7 +16,7 @@ export default createGlobalStyle`
 	}
 
 	body {
-		font-family: 'Raleway', sans-serif;
+		font-family: 'Roboto', sans-serif;
 		background: #ecedef;
 		color: #333;
 		-webkit-font-smoothing: antialiased !important;
