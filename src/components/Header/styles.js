@@ -15,32 +15,59 @@ const HeaderLogo = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-
-	h2 {
-		font-size: 1.3rem;
-	}
 	
 	img {
-		padding: 0 30px;
+		/* padding: 0 5px; */
 		height: 2.4rem;
+		margin-right: 10px;
 	}
 `;
 
-const HeaderOptions = styled.ul`
-	list-style: none;
+const HeaderButtons = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	flex-direction: row;
+	margin: 0;
+	
+	ul {
+		list-style: none;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 
-	li {
-		padding: 15px;
-		margin: 1px;
-		font-size: 0.95rem;
-		a {
-			text-decoration: none;
-			color: inherit;
+		li {
+			padding: 15px;
+			margin: 1px;
+			font-size: 0.95rem;
+			a {
+				text-decoration: none;
+				color: inherit;
+			}
 		}
+
+		li#general {
+			border-bottom: 3px solid #333
+		}
+	}
+
+`;
+
+const HeaderProfile = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+
+.profile-icon {
+		height: 5vh;
+		width: 5vh;
+		border-radius: 100%;
+		background: #dadada;
+		padding: 0;
+		border: 2px solid #596dff;
+		margin-left: 20px;
+		cursor: pointer;
 	}
 `;
 
-export { Container, HeaderOptions, HeaderLogo };
+export { Container, HeaderButtons, HeaderLogo, HeaderProfile };
