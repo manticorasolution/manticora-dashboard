@@ -9,7 +9,7 @@ const alerts =
 	stock: {
 		key: '1',
 		title: 'Alguns produtos estão chegando ao fim do estoque',
-		subtitle: 'De acordo com seu histórico de vendas',
+		subtitle: 'Análise feita de acordo com seu histórico de vendas',
 		className: 'alert1'
 	},
 	validities: {
