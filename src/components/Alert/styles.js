@@ -2,8 +2,9 @@ import styled from 'styled-components';
 
 const Container = styled.div`
 	color: #721c24;
+	background: rgb(255,82,82, 0.65);
+	border-radius: 5px;
 	padding: 15px 30px;
-	border: 1px solid #F40000;
 	cursor: pointer;
 	display: grid;
 	grid-template-columns: 0.1fr 1fr;

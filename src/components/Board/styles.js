@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Container = styled.div`
 	display: grid;
 	grid-template-columns: 1fr 0.8fr;
-	grid-template-rows: 12vh 44vh 70vh;
+	grid-template-rows: 10vh 50vh 70vh;
 	grid-gap: 20px;
 	height: 150vh;
 	width: 100%;
@@ -68,11 +68,6 @@ const Container = styled.div`
 			grid-template-rows: 0.6fr 0.6fr;
 			grid-row-gap: 10px;
 			grid-area: alerts;
-
-			.alert1, .alert2 {
-				background: salmon;
-				border-radius: 5px;
-			}
 		}
 
 		.in-alert-products {

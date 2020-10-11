@@ -69,11 +69,24 @@ const Board = () => {
 						yearMonth={card.yearMonth}
 						revenues={card.revenues}
 						consideration={card.consideration}
+						isRevenues={true}
 					/>
 				))}
 			</div>
-			<div className='cards-right-up'></div>
-			<div className='cards-left-down'></div>
+			<Card
+				className='cards-right-up'
+				title='Projeção de Vendas'
+				yearMonth='Próximos 30 dias'
+				revenues=''
+				consideration=''
+			/>
+			<Card
+				className='cards-left-down'
+				title='Produtos Mais Vendidos'
+				yearMonth='Outubro de 2020'
+				revenues=''
+				consideration=''
+			/>
 			<div className='cards-right-down'>
 				<div className='alerts'>
 					{alerts.map(alert => (
@@ -85,7 +98,12 @@ const Board = () => {
 						/>
 					))}
 				</div>
-				<div className='in-alert-products'></div>
+				<Card
+					className='in-alert-products'
+					title='Produtos em Alerta'
+					yearMonth='Próximos 7 dias'
+					hasTable={true}
+				/>
 			</div>
 		</Container>
 	);
