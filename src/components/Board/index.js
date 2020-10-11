@@ -48,7 +48,7 @@ const cards = [
 		className: 'card4',
 		title: 'Semestral',
 		yearMonth: 'De Maio a Outubro de 2020',
-		hasLineChart: true
+		hasBarChart: true
 
 	},
 
@@ -69,7 +69,7 @@ const Board = () => {
 						yearMonth={card.yearMonth}
 						revenues={card.revenues}
 						consideration={card.consideration}
-						hasLineChart={card.hasLineChart || ''}
+						hasBarChart={card.hasBarChart || ''}
 						isRevenues={true}
 					/>
 				))}

@@ -3,9 +3,9 @@ import styled from 'styled-components';
 const Container = styled.div`
 	display: grid;
 	grid-template-columns: 1fr 0.8fr;
-	grid-template-rows: 10vh 50vh 70vh;
+	grid-template-rows: 10vh 56vh 70vh;
 	grid-gap: 20px;
-	height: 150vh;
+	height: 145vh;
 	width: 100%;
 	margin: auto;
 	max-width: 95vw;
@@ -29,7 +29,7 @@ const Container = styled.div`
 
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
+		grid-template-rows: 1.2fr 1fr;
 		grid-gap: 15px;
 		height: 100%;
 
