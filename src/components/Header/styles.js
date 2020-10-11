@@ -17,6 +17,7 @@ const HeaderLogo = styled.div`
 	justify-content: space-between;
 	
 	img {
+		cursor: pointer;
 		/* padding: 0 5px; */
 		height: 2.4rem;
 		margin-right: 10px;
@@ -40,6 +41,7 @@ const HeaderButtons = styled.div`
 			padding: 15px;
 			margin: 1px;
 			font-size: 0.95rem;
+			cursor: pointer;
 			a {
 				text-decoration: none;
 				color: inherit;
@@ -57,6 +59,7 @@ const HeaderProfile = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
+	cursor: pointer;
 
 .profile-icon {
 		height: 5vh;
@@ -66,7 +69,6 @@ const HeaderProfile = styled.div`
 		padding: 0;
 		border: 2px solid #596dff;
 		margin-left: 20px;
-		cursor: pointer;
 	}
 `;
 

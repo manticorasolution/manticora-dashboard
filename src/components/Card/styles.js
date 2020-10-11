@@ -5,6 +5,8 @@ const Container = styled.div`
 	flex-direction: column;
 	padding: 15px 30px 15px 20px;
 	justify-content: space-between;
+	cursor: pointer;
+	box-shadow: -1px 2px 6px -2px rgba(0,0,0,0.35);
 
 	.title {
 		font-size: 1rem;
