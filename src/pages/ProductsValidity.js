@@ -4,15 +4,15 @@ import Header from '../components/Header';
 import Board from '../components/Board';
 import Footer from '../components/Footer';
 
-function Dashboard() {
+function ProductsValidity() {
 	return (
 		<>
 			<GlobalStyle />
-			<Header activePage="general" />
+			<Header activePage="validities" />
 			<Board />
 			<Footer />
 		</>
 	);
 }
 
-export default Dashboard;
+export default ProductsValidity;
