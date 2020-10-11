@@ -77,6 +77,7 @@ const Board = () => {
 				className='cards-right-up'
 				title='Projeção de Vendas'
 				yearMonth='Próximos 30 dias'
+				hasLineChart={true}
 			/>
 			<Card
 				className='cards-left-down'

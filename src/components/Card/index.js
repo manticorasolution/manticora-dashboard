@@ -2,6 +2,7 @@ import React from 'react';
 import Container from './styles';
 import InAlertProductsTable from '../Table/inAlertProductsTable';
 import BestSellersTable from '../Table/bestSellersTable';
+import LineChart from '../Chart/lineChart';
 
 const Card = ({
 	className,
@@ -12,6 +13,7 @@ const Card = ({
 	isRevenues,
 	hasInAlertTable,
 	hasBestSellersTable,
+	hasLineChart,
 }) => {
 	return (
 		<Container className={className}>
@@ -27,6 +29,7 @@ const Card = ({
 				</h1>}
 			{hasInAlertTable && <InAlertProductsTable />}
 			{hasBestSellersTable && <BestSellersTable />}
+			{hasLineChart && <LineChart />}
 			<p className="revenues">{revenues}</p>
 			<p className="consideration">{consideration}</p>
 		</Container>
