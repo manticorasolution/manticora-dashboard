@@ -31,8 +31,12 @@ const Container = styled.div`
 	}
 
 	.consideration {
+		display: flex;
+		align-items: center;
 		font-size: 0.8rem;
-		color: grey
+		color: grey;
+
+		p { margin-left: 10px }
 	}
 `;
 

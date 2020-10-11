@@ -4,6 +4,7 @@ import InAlertProductsTable from '../Table/inAlertProductsTable';
 import BestSellersTable from '../Table/bestSellersTable';
 import LineChart from '../Chart/lineChart';
 import BarChart from '../Chart/barChart';
+import { FaArrowUp, FaArrowDown } from 'react-icons/fa';
 
 const Card = ({
 	className,
@@ -16,6 +17,7 @@ const Card = ({
 	hasBestSellersTable,
 	hasLineChart,
 	hasBarChart,
+	goodConsideration,
 }) => {
 	return (
 		<Container className={className}>
@@ -34,7 +36,18 @@ const Card = ({
 			{hasLineChart && <LineChart />}
 			{hasBarChart && <BarChart />}
 			<p className="revenues">{revenues}</p>
-			<p className="consideration">{consideration}</p>
+			{consideration && goodConsideration &&
+				<div className="consideration">
+					<FaArrowUp color="grey" size="1.2rem" />
+					<p>{consideration}</p>
+				</div>
+			}
+			{consideration && !goodConsideration &&
+				<div className="consideration">
+					<FaArrowDown color="grey" size="1.2rem" />
+					<p>{consideration}</p>
+				</div>
+			}
 		</Container>
 	);
 }
