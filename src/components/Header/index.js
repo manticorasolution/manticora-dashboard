@@ -17,7 +17,7 @@ const Header = () => {
 			</ul>
 		</HeaderButtons>
 		<HeaderProfile>
-			<FaBell color="#dadada" size="3vh" />
+			<FaBell color="#45454b" size="3vh" />
 			<img className="profile-icon" alt="Perfil do João" src='https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortFlat&accessoriesType=Blank&hairColor=BrownDark&facialHairType=BeardLight&facialHairColor=BrownDark&clotheType=ShirtVNeck&clotheColor=Heather&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Brown'
 			/>
 		</HeaderProfile>
