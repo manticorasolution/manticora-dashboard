@@ -49,7 +49,7 @@ const SecundaryBoard = ({ page }) => {
 			{ page === 'validities' &&
 				<div className="advice">
 					<FaLightbulb size="1.5rem" color="#F4E409" />
-					<h4 >Recomendamos que faça uma promoção destes produtos :)</h4>
+					<h4 >Recomendamos que faça uma promoção desses produtos :)</h4>
 				</div>
 			}
 		</Container >

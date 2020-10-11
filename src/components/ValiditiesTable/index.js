@@ -14,16 +14,18 @@ const useStyles = makeStyles({
 	},
 });
 
-const createData = (name, status, amount) => {
-	return { name, status, amount }
+const createData = (name, amount, expiration) => {
+	return { name, amount, expiration }
 };
 
 const rows = [
-	createData('Açúcar', 'Acabando', '2 sacos'),
-	createData('Arroz', 'Validade próxima', '23 sacos'),
-	createData('Tomate', 'Validade próxima', '6 caixas'),
-	createData('Farinha de trigo', 'Acabando', '5 sacos'),
-	createData('Amaciante', 'Acabando', '4 litros'),
+	createData('Couve', '1 caixa', 'Em 7 dias'),
+	createData('Arroz', '23 sacos', 'Em 15 dias'),
+	createData('Tomate', '6 caixas', 'Em 21 dias'),
+	createData('Cebola', '3 caixas', 'Em 26 dias'),
+	createData('Pão de Forma', '9 pacotes', 'Em 27 dias'),
+	createData('Margarina', '8 potes', 'Em 27 dias'),
+	createData('Páprica', '15 pacotes', 'Em 28 dias'),
 ];
 
 const ValiditiesTable = () => {
@@ -31,12 +33,12 @@ const ValiditiesTable = () => {
 
 	return (
 		<TableContainer component={Paper} elevation={0}>
-			<Table className={classes.table} size="small" aria-label="simple table">
+			<Table className={classes.table} aria-label="simple table">
 				<TableHead>
 					<TableRow>
 						<TableCell><b>Produto</b></TableCell>
-						<TableCell align="left"><b>Situação</b></TableCell>
 						<TableCell align="left"><b>Quantidade</b></TableCell>
+						<TableCell align="left"><b>Vence em</b></TableCell>
 					</TableRow>
 				</TableHead>
 				<TableBody>
@@ -45,8 +47,8 @@ const ValiditiesTable = () => {
 							<TableCell component="th" scope="row">
 								{row.name}
 							</TableCell>
-							<TableCell align="left">{row.status}</TableCell>
 							<TableCell align="left">{row.amount}</TableCell>
+							<TableCell align="left">{row.expiration}</TableCell>
 						</TableRow>
 					))}
 				</TableBody>
