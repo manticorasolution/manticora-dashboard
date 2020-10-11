@@ -48,9 +48,10 @@ const HeaderButtons = styled.div`
 			}
 		}
 
-		li#general {
+		li#${props => props.activePage} {
 			border-bottom: 3px solid #596dff;
-			color: #596dff
+			color: #596dff;
+			font-weight: 600;
 		}
 	}
 

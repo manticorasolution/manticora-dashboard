@@ -2,6 +2,8 @@ import React from 'react';
 import Container from './styles';
 import InAlertProductsTable from '../Table/inAlertProductsTable';
 import BestSellersTable from '../Table/bestSellersTable';
+import StockTable from '../StockTable';
+import ValiditiesTable from '../ValiditiesTable';
 import LineChart from '../Chart/lineChart';
 import BarChart from '../Chart/barChart';
 import { FaArrowUp, FaArrowDown } from 'react-icons/fa';
@@ -18,6 +20,8 @@ const Card = ({
 	hasLineChart,
 	hasBarChart,
 	goodConsideration,
+	hasStockTable,
+	hasValiditiesTable,
 }) => {
 	return (
 		<Container className={className}>
@@ -33,6 +37,8 @@ const Card = ({
 				</h1>}
 			{hasInAlertTable && <InAlertProductsTable />}
 			{hasBestSellersTable && <BestSellersTable />}
+			{hasStockTable && <StockTable />}
+			{hasValiditiesTable && <ValiditiesTable />}
 			{hasLineChart && <LineChart />}
 			{hasBarChart && <BarChart />}
 			<p className="revenues">{revenues}</p>
