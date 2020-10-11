@@ -25,7 +25,7 @@ const cards = [
 		title: 'Geral',
 		yearMonth: 'Outubro de 2020',
 		revenues: 'R$35.854,24',
-		consideration: 'houve aumento de 15% em relação ao mesmo período do mês anterior',
+		consideration: 'Houve aumento de 15% em relação ao mesmo período do mês anterior',
 	},
 	{
 		key: '2',
@@ -33,7 +33,7 @@ const cards = [
 		title: 'E-commerce',
 		yearMonth: 'Outubro de 2020',
 		revenues: 'R$20.532,74',
-		consideration: 'houve aumento de 47% em relação ao mesmo período do mês anterior',
+		consideration: 'Houve aumento de 47% em relação ao mesmo período do mês anterior',
 	},
 	{
 		key: '3',
@@ -41,7 +41,7 @@ const cards = [
 		title: 'Geral',
 		yearMonth: 'Outubro de 2020',
 		revenues: 'R$15.321,50',
-		consideration: 'houve queda de 34% em relação ao mesmo período do mês anterior',
+		consideration: 'Houve queda de 34% em relação ao mesmo período do mês anterior',
 	},
 	{
 		key: '4',
@@ -77,15 +77,13 @@ const Board = () => {
 				className='cards-right-up'
 				title='Projeção de Vendas'
 				yearMonth='Próximos 30 dias'
-				revenues=''
-				consideration=''
 			/>
 			<Card
 				className='cards-left-down'
 				title='Produtos Mais Vendidos'
 				yearMonth='Outubro de 2020'
-				revenues=''
-				consideration=''
+				hasBestSellersTable={true}
+				consideration='Essas vendas representam 15% do faturamento total dos últimos 30 dias'
 			/>
 			<div className='cards-right-down'>
 				<div className='alerts'>
@@ -102,7 +100,7 @@ const Board = () => {
 					className='in-alert-products'
 					title='Produtos em Alerta'
 					yearMonth='Próximos 7 dias'
-					hasTable={true}
+					hasInAlertTable={true}
 				/>
 			</div>
 		</Container>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Container from './styles';
-import Table from '../Table';
+import InAlertProductsTable from '../Table/inAlertProductsTable';
+import BestSellersTable from '../Table/bestSellersTable';
 
 const Card = ({
 	className,
@@ -9,7 +10,8 @@ const Card = ({
 	revenues,
 	consideration,
 	isRevenues,
-	hasTable,
+	hasInAlertTable,
+	hasBestSellersTable,
 }) => {
 	return (
 		<Container className={className}>
@@ -23,7 +25,8 @@ const Card = ({
 					<b>{title}</b>
 					<p className="month-year">{yearMonth}</p>
 				</h1>}
-			{hasTable && <Table />}
+			{hasInAlertTable && <InAlertProductsTable />}
+			{hasBestSellersTable && <BestSellersTable />}
 			<p className="revenues">{revenues}</p>
 			<p className="consideration">{consideration}</p>
 		</Container>
