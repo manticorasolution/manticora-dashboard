@@ -1,7 +1,7 @@
 import React from 'react';
 import GlobalStyle from '../styles/global';
 import Header from '../components/Header';
-import Board from '../components/Board';
+import SecundaryBoard from '../components/AltBoard';
 import Footer from '../components/Footer';
 
 function StockPrediction() {
@@ -9,7 +9,7 @@ function StockPrediction() {
 		<>
 			<GlobalStyle />
 			<Header activePage="stock" />
-			<Board />
+			<SecundaryBoard page="stock" />
 			<Footer />
 		</>
 	);

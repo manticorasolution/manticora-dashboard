@@ -1,7 +1,7 @@
 import React from 'react';
 import GlobalStyle from '../styles/global';
 import Header from '../components/Header';
-import Board from '../components/Board';
+import SecundaryBoard from '../components/AltBoard';
 import Footer from '../components/Footer';
 
 function ProductsValidity() {
@@ -9,7 +9,7 @@ function ProductsValidity() {
 		<>
 			<GlobalStyle />
 			<Header activePage="validities" />
-			<Board />
+			<SecundaryBoard page="validities" />
 			<Footer />
 		</>
 	);

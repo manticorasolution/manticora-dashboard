@@ -7,6 +7,7 @@ const Container = styled.div`
 	justify-content: space-between;
 	cursor: pointer;
 	box-shadow: -1px 2px 6px -2px rgba(0,0,0,0.35);
+	background: white;
 
 	.title {
 		font-size: 1rem;
