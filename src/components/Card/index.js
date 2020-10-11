@@ -6,7 +6,7 @@ import StockTable from '../StockTable';
 import ValiditiesTable from '../ValiditiesTable';
 import LineChart from '../Chart/lineChart';
 import BarChart from '../Chart/barChart';
-import { FaArrowUp, FaArrowDown } from 'react-icons/fa';
+import { FaArrowUp, FaArrowDown, FaArrowRight, FaThumbtack } from 'react-icons/fa';
 
 const Card = ({
 	className,
@@ -22,6 +22,8 @@ const Card = ({
 	goodConsideration,
 	hasStockTable,
 	hasValiditiesTable,
+	isOrder,
+	orders,
 }) => {
 	return (
 		<Container className={className}>
@@ -30,11 +32,24 @@ const Card = ({
 					Faturamento <b>{title}</b>
 					<p className="month-year">{yearMonth}</p>
 				</h1>}
-			{!isRevenues &&
+			{!isRevenues && !isOrder &&
 				<h1 className="title">
 					<b>{title}</b>
 					<p className="month-year">{yearMonth}</p>
 				</h1>}
+			{!isRevenues && isOrder &&
+				<div className="order-person">
+
+					<div className="avatar-parent">
+						<img className="avatar" alt="avatar" src={orders.avatar} />
+					</div>
+
+					<h1 className="title">
+						<b>{title}</b>
+					</h1>
+
+				</div>
+			}
 			{hasInAlertTable && <InAlertProductsTable />}
 			{hasBestSellersTable && <BestSellersTable />}
 			{hasStockTable && <StockTable />}
@@ -52,6 +67,24 @@ const Card = ({
 				<div className="consideration">
 					<FaArrowDown color="grey" size="1.2rem" />
 					<p>{consideration}</p>
+				</div>
+			}
+			{isOrder &&
+				<div>
+					<div className="orders-list">
+						<ul>
+							{orders.list.map(item => (
+								<div>
+									<FaArrowRight size="1rem" color="#45454b" />
+									<li key={item} >{item}</li>
+								</div>
+							))}
+						</ul>
+					</div>
+					<div className="address">
+						<FaThumbtack size="1rem" color="#E63946" />
+						<p>{orders.address}</p>
+					</div>
 				</div>
 			}
 		</Container>
