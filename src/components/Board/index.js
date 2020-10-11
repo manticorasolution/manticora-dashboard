@@ -25,6 +25,7 @@ const cards = [
 		title: 'Geral',
 		yearMonth: 'Outubro de 2020',
 		revenues: 'R$35.854,24',
+		goodConsideration: true,
 		consideration: 'Houve aumento de 15% em relação ao mesmo período do mês anterior',
 	},
 	{
@@ -33,12 +34,13 @@ const cards = [
 		title: 'E-commerce',
 		yearMonth: 'Outubro de 2020',
 		revenues: 'R$20.532,74',
+		goodConsideration: true,
 		consideration: 'Houve aumento de 47% em relação ao mesmo período do mês anterior',
 	},
 	{
 		key: '3',
 		className: 'card3',
-		title: 'Geral',
+		title: 'Loja Física',
 		yearMonth: 'Outubro de 2020',
 		revenues: 'R$15.321,50',
 		consideration: 'Houve queda de 34% em relação ao mesmo período do mês anterior',
@@ -58,7 +60,7 @@ const Board = () => {
 	return (
 		<Container>
 			<div className='board-name'>
-				<h2>Painel de controle</h2>
+				<h2>Painel inteligente</h2>
 			</div>
 			<div className='cards-left-up'>
 				{cards.map(card => (
@@ -69,7 +71,8 @@ const Board = () => {
 						yearMonth={card.yearMonth}
 						revenues={card.revenues}
 						consideration={card.consideration}
-						hasBarChart={card.hasBarChart || ''}
+						hasBarChart={card.hasBarChart || false}
+						goodConsideration={card.goodConsideration || false}
 						isRevenues={true}
 					/>
 				))}
