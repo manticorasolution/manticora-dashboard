@@ -6,7 +6,7 @@ const data = {
 	labels: ['Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out'],
 	datasets: [
 		{
-			label: 'My First dataset',
+			label: 'Faturamento em R$',
 			backgroundColor: 'rgba(89,109,255,0.8)',
 			borderColor: 'rgba(89,109,255,1)',
 			borderWidth: 1,
