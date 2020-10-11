@@ -19,13 +19,13 @@ const createData = (name, amount, expiration) => {
 };
 
 const rows = [
-	createData('Couve', '1 caixa', 'Em 7 dias'),
-	createData('Arroz', '23 sacos', 'Em 15 dias'),
-	createData('Tomate', '6 caixas', 'Em 21 dias'),
-	createData('Cebola', '3 caixas', 'Em 26 dias'),
-	createData('Pão de Forma', '9 pacotes', 'Em 27 dias'),
-	createData('Margarina', '8 potes', 'Em 27 dias'),
-	createData('Páprica', '15 pacotes', 'Em 28 dias'),
+	createData('Couve', '1 caixa', '7 dias'),
+	createData('Arroz', '23 sacos', '15 dias'),
+	createData('Tomate', '6 caixas', '21 dias'),
+	createData('Cebola', '3 caixas', '26 dias'),
+	createData('Pão de Forma', '9 pacotes', '27 dias'),
+	createData('Margarina', '8 potes', '27 dias'),
+	createData('Páprica', '15 pacotes', '28 dias'),
 ];
 
 const ValiditiesTable = () => {
