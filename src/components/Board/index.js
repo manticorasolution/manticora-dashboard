@@ -48,8 +48,8 @@ const cards = [
 		className: 'card4',
 		title: 'Semestral',
 		yearMonth: 'De Maio a Outubro de 2020',
-		revenues: '',
-		consideration: '',
+		hasLineChart: true
+
 	},
 
 ]
@@ -69,6 +69,7 @@ const Board = () => {
 						yearMonth={card.yearMonth}
 						revenues={card.revenues}
 						consideration={card.consideration}
+						hasLineChart={card.hasLineChart || ''}
 						isRevenues={true}
 					/>
 				))}
