@@ -38,8 +38,8 @@ const HeaderButtons = styled.div`
 		justify-content: space-between;
 
 		li {
-			padding: 15px;
-			margin: 1px;
+			padding: 16px 15px;
+			margin: 0 1px;
 			font-size: 0.95rem;
 			cursor: pointer;
 			a {
@@ -49,7 +49,8 @@ const HeaderButtons = styled.div`
 		}
 
 		li#general {
-			border-bottom: 3px solid #333
+			border-bottom: 3px solid #596dff;
+			color: #596dff
 		}
 	}
 
@@ -65,7 +66,7 @@ const HeaderProfile = styled.div`
 		height: 5vh;
 		width: 5vh;
 		border-radius: 100%;
-		background: #dadada;
+		background: #65c9ff;
 		padding: 0;
 		border: 2px solid #596dff;
 		margin-left: 20px;

@@ -11,14 +11,15 @@ const Header = () => {
 		<HeaderButtons>
 			<ul>
 				<b><li key="1" id="general">Geral</li></b>
-				<li key="2" id="growth">Escala de Crescimento</li>
+				<li key="2" id="orders">Pedidos</li>
 				<li key="3" id="stock">Previsão de Estoque</li>
 				<li key="4" id="expire">Validade dos Produtos</li>
 			</ul>
 		</HeaderButtons>
 		<HeaderProfile>
 			<FaBell color="#dadada" size="3vh" />
-			<div className="profile-icon"></div>
+			<img className="profile-icon" alt="Perfil do João" src='https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortFlat&accessoriesType=Blank&hairColor=BrownDark&facialHairType=BeardLight&facialHairColor=BrownDark&clotheType=ShirtVNeck&clotheColor=Heather&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Brown'
+			/>
 		</HeaderProfile>
 	</Container>
 }
