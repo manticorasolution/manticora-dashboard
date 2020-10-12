@@ -60,7 +60,7 @@ const cards = [
 
 const Board = () => {
 	return (
-		<Container>
+		<Container className="board">
 			<div className='board-name'>
 				<h2>Painel inteligente</h2>
 			</div>

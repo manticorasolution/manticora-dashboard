@@ -28,7 +28,12 @@ const Container = styled.div`
 	.revenues {
 		font-size: 1.8rem;
 		font-weight: 600;
-		color: #596dff
+		color: #596dff;
+
+		@media(max-width: 600px) {
+			padding: 10px 0;
+		}
+
 	}
 
 	.consideration {

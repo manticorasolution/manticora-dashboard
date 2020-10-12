@@ -12,6 +12,10 @@ const Container = styled.footer`
 			color: inherit;
 			font-weight: bold;
 		}
+
+		@media(max-width: 600px) {
+			display: none;
+		}
 `;
 
 export default Container;

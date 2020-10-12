@@ -9,18 +9,32 @@ const Container = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
+	@media(max-width: 600px) {
+		display: flex;
+		flex-direction: column;
+	}
 `;
 
 const HeaderLogo = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
+	@media(max-width: 600px) {
+		justify-content: center;
+	}
 	
 	img {
 		cursor: pointer;
 		/* padding: 0 5px; */
 		height: 2.4rem;
 		margin-right: 10px;
+		
+		@media(max-width: 600px) {
+			padding-top: 10px;
+			margin: none
+		}		
 	}
 `;
 
@@ -36,6 +50,11 @@ const HeaderButtons = styled.div`
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+
+		@media(max-width: 600px) {
+		display: none;
+		flex-direction: column;
+	}
 
 		li {
 			padding: 16px 15px;
@@ -62,6 +81,11 @@ const HeaderProfile = styled.div`
 	align-items: center;
 	justify-content: flex-end;
 	cursor: pointer;
+
+	@media(max-width: 600px) {
+		display: none;
+		flex-direction: column;
+	}
 
 .profile-icon {
 		height: 5vh;
