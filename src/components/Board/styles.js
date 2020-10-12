@@ -6,7 +6,7 @@ const Container = styled.div`
 	grid-template-rows: 10vh 56vh 70vh;
 	grid-gap: 20px;
 	height: 145vh;
-	width: 100%;
+	/* width: 100%; */
 	margin: auto;
 	max-width: 95vw;
 

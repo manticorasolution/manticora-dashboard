@@ -1,7 +1,7 @@
 import React from 'react';
 import GlobalStyle from '../styles/global';
 import Header from '../components/Header';
-import Board from '../components/Board';
+import OrdersBoard from '../components/OrdersBoard';
 import Footer from '../components/Footer';
 
 function Orders() {
@@ -9,7 +9,7 @@ function Orders() {
 		<>
 			<GlobalStyle />
 			<Header activePage="orders" />
-			<Board />
+			<OrdersBoard />
 			<Footer />
 		</>
 	);
