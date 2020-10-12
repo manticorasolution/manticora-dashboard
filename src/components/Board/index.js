@@ -8,13 +8,15 @@ const alerts = [
 		key: '1',
 		title: 'Alguns produtos estão chegando ao fim do estoque',
 		subtitle: 'Clique para saber mais',
-		className: 'alert1'
+		className: 'alert1',
+		redirectTo: '/estoque'
 	},
 	{
 		key: '2',
 		title: 'Alguns produtos estão com validade próxima',
 		subtitle: 'Clique para saber mais',
-		className: 'alert2'
+		className: 'alert2',
+		redirectTo: '/validades'
 	},
 ]
 
@@ -98,6 +100,7 @@ const Board = () => {
 							className={alert.className}
 							title={alert.title}
 							subtitle={alert.subtitle}
+							redirectTo={alert.redirectTo}
 						/>
 					))}
 				</div>

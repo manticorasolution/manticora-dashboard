@@ -26,6 +26,7 @@ const Container = styled.div`
 	.icon {
 		grid-area: icon
 	}
+
 `;
 
 export default Container;
