@@ -4,6 +4,7 @@ import InAlertProductsTable from '../Table/inAlertProductsTable';
 import BestSellersTable from '../Table/bestSellersTable';
 import StockTable from '../StockTable';
 import ValiditiesTable from '../ValiditiesTable';
+import OrdersTable from '../OrdersTable';
 import LineChart from '../Chart/lineChart';
 import BarChart from '../Chart/barChart';
 import { FaArrowUp, FaArrowDown, FaArrowRight, FaThumbtack } from 'react-icons/fa';
@@ -22,6 +23,7 @@ const Card = ({
 	goodConsideration,
 	hasStockTable,
 	hasValiditiesTable,
+	hasOrdersTable,
 	isOrder,
 	orders,
 }) => {
@@ -54,6 +56,7 @@ const Card = ({
 			{hasBestSellersTable && <BestSellersTable />}
 			{hasStockTable && <StockTable />}
 			{hasValiditiesTable && <ValiditiesTable />}
+			{hasOrdersTable && <OrdersTable />}
 			{hasLineChart && <LineChart />}
 			{hasBarChart && <BarChart />}
 			<p className="revenues">{revenues}</p>

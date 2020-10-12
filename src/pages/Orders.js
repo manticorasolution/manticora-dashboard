@@ -10,7 +10,7 @@ function Orders() {
 			<GlobalStyle />
 			<Header activePage="orders" />
 			<OrdersBoard />
-			{/* <Footer /> */}
+			<Footer />
 		</>
 	);
 }

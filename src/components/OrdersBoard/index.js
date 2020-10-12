@@ -54,7 +54,7 @@ const OrdersBoard = () => {
 			</div>
 
 			<div className='table'>
-				<Card />
+				<Card hasOrdersTable={true} />
 			</div>
 
 		</Container>
