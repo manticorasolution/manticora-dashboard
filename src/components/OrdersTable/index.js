@@ -41,7 +41,7 @@ const OrdersTable = () => {
 						<TableCell align="left"><b>Meio de pagamento</b></TableCell>
 						<TableCell align="left"><b>Situação</b></TableCell>
 						<TableCell align="left"><b>Total</b></TableCell>
-						<TableCell align="left"></TableCell>
+						<TableCell align="left">Cupom fiscal</TableCell>
 					</TableRow>
 				</TableHead>
 				<TableBody>
