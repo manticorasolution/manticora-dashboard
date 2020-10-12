@@ -38,10 +38,6 @@ npm run start
 - Github: [@pedromihael](https://github.com/pedromihael)
 - LinkedIn: [@opedropaes](https://linkedin.com/in/opedropaes)
 
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
 ### E se não quiser, baixar...
 
 <a href="https://imgur.com/q5AHOqQ"><img src="https://i.imgur.com/q5AHOqQ.png" title="source: imgur.com" /></a>
