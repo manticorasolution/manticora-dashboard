@@ -38,14 +38,4 @@ npm run start
 - Github: [@pedromihael](https://github.com/pedromihael)
 - LinkedIn: [@opedropaes](https://linkedin.com/in/opedropaes)
 
-### E se não quiser, baixar...
-
-<a href="https://imgur.com/q5AHOqQ"><img src="https://i.imgur.com/q5AHOqQ.png" title="source: imgur.com" /></a>
-<a href="https://imgur.com/BFIqarG"><img src="https://i.imgur.com/BFIqarG.png" title="source: imgur.com" /></a>
-<a href="https://imgur.com/YQjXpLt"><img src="https://i.imgur.com/YQjXpLt.png" title="source: imgur.com" /></a>
-<a href="https://imgur.com/eWvKGom"><img src="https://i.imgur.com/eWvKGom.png" title="source: imgur.com" /></a>
-<a href="https://imgur.com/TF2cvQI"><img src="https://i.imgur.com/TF2cvQI.png" title="source: imgur.com" /></a>
-<a href="https://imgur.com/02A57RX"><img src="https://i.imgur.com/02A57RX.png" title="source: imgur.com" /></a>
-<a href="https://imgur.com/dsRDsCT"><img src="https://i.imgur.com/dsRDsCT.png" title="source: imgur.com" /></a>
-
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
