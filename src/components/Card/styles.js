@@ -21,8 +21,10 @@ const Container = styled.div`
 			margin-top: 5px;
 			font-size: 0.7rem;
 			font-weight: 200;
-			color: grey
+			color: grey;
+		
 		}
+
 	}
 
 	.revenues {
@@ -31,7 +33,7 @@ const Container = styled.div`
 		color: #596dff;
 
 		@media(max-width: 600px) {
-			padding: 10px 0;
+			padding: 0 10px
 		}
 
 	}
@@ -95,6 +97,10 @@ const Container = styled.div`
 		.avatar-parent {
 			display: flex;
 			justify-content: center;
+
+			@media(max-width: 600px) {
+				display: none;
+			}
 		}
 
 		h1 {

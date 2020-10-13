@@ -43,10 +43,12 @@ const OrdersBoard = () => {
 				<h2>Pedidos em andamento</h2>
 			</div>
 
-			<div className='cards'>
-				{orders.map(order => (
-					<Card isOrder={true} orders={order} title={order.name} />
-				))}
+			<div className="cards-wrapper">
+				<div className='cards'>
+					{orders.map(order => (
+						<Card isOrder={true} orders={order} title={order.name} className="card" />
+					))}
+				</div>
 			</div>
 
 			<div className='delivered'>

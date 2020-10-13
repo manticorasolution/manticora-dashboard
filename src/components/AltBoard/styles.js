@@ -15,6 +15,13 @@ const Container = styled.div`
 
 	padding: 30px;
 
+	@media(max-width: 600px) {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 30px 10px;
+	}
+
 	.alert { grid-area: alert }
 	
 	.productsTable { grid-area: productsTable }

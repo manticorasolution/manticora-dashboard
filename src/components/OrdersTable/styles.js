@@ -16,7 +16,12 @@ export const Badge = styled.div`
 	display: flex;
 	justify-content: center;
 	border-radius: 15px;
-	padding: 5px
+	padding: 5px;
+
+	@media(max-width: 650px) {
+		height: 5vh;
+		width: 15vw;
+	}
 `;
 
 export default Container;
