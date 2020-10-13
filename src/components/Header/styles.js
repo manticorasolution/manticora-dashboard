@@ -12,7 +12,10 @@ const Container = styled.div`
 
 	@media(max-width: 600px) {
 		display: flex;
-		flex-direction: column;
+		width: 100%;
+		height: 12vh;
+		padding: 0 10px;
+		overflow-x: scroll;
 	}
 `;
 
@@ -22,7 +25,7 @@ const HeaderLogo = styled.div`
 	justify-content: space-between;
 
 	@media(max-width: 600px) {
-		justify-content: center;
+		display: none;
 	}
 	
 	img {
@@ -52,8 +55,10 @@ const HeaderButtons = styled.div`
 		justify-content: space-between;
 
 		@media(max-width: 600px) {
-		display: none;
-		flex-direction: column;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		overflow-x: scroll;
 	}
 
 		li {
@@ -61,6 +66,9 @@ const HeaderButtons = styled.div`
 			margin: 0 1px;
 			font-size: 0.95rem;
 			cursor: pointer;
+			text-align: center;
+			height: 100%;
+
 			a {
 				text-decoration: none;
 				color: inherit;

@@ -39,6 +39,7 @@ const SecundaryBoard = ({ page }) => {
 				className={alerts[page].className}
 				title={alerts[page].title}
 				subtitle={alerts[page].subtitle}
+				redirectTo="#"
 			/>
 			<Card
 				className='in-alert-products'

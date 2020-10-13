@@ -19,7 +19,7 @@ const Container = styled.div`
 		grid-area: title;
 	}
 	.subtitle {
-		font-size: 0.7rem;
+		font-size: 0.8rem;
 		font-weight: 200;
 		grid-area: subtitle;
 	}

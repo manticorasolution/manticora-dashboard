@@ -5,7 +5,7 @@ import Card from '../Card';
 const orders = [
 	{
 		name: 'Adelino Cruz',
-		list: ['1 litro de leite integral', '1 pacote de farinha de trigo', '6 ovos'],
+		list: ['1L de leite', '1 pacote de farinha de trigo', '6 ovos'],
 		address: 'Rua da Paz, 21',
 		avatar: 'https://avataaars.io/?avatarStyle=Circle&topType=ShortHairSides&accessoriesType=Kurt&hairColor=BlondeGolden&facialHairType=MoustacheMagnum&facialHairColor=BlondeGolden&clotheType=ShirtCrewNeck&clotheColor=Pink&eyeType=WinkWacky&eyebrowType=UnibrowNatural&mouthType=Serious&skinColor=DarkBrown'
 	},
@@ -46,7 +46,7 @@ const OrdersBoard = () => {
 			<div className="cards-wrapper">
 				<div className='cards'>
 					{orders.map(order => (
-						<Card isOrder={true} orders={order} title={order.name} className="card" />
+						<Card key={order.name} isOrder={true} orders={order} title={order.name} className="card" />
 					))}
 				</div>
 			</div>

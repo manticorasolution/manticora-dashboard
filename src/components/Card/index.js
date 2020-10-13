@@ -46,7 +46,7 @@ const Card = ({
 						<img className="avatar" alt="avatar" src={orders.avatar} />
 					</div>
 
-					<h1 className="title" id="order-title">
+					<h1 className="title">
 						<b>{title}</b>
 					</h1>
 
@@ -77,9 +77,9 @@ const Card = ({
 					<div className="orders-list">
 						<ul>
 							{orders.list.map(item => (
-								<div>
-									<FaArrowRight size="1rem" color="#45454b" />
-									<li key={item} >{item}</li>
+								<div key={item}>
+									<FaArrowRight size="1rem" color="#45454b" className="arrow" />
+									<li>{item}</li>
 								</div>
 							))}
 						</ul>

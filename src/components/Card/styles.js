@@ -19,7 +19,7 @@ const Container = styled.div`
 		
 		p {
 			margin-top: 5px;
-			font-size: 0.7rem;
+			font-size: 0.8rem;
 			font-weight: 200;
 			color: grey;
 		
@@ -33,7 +33,7 @@ const Container = styled.div`
 		color: #596dff;
 
 		@media(max-width: 600px) {
-			padding: 0 10px
+			padding: 10px 0
 		}
 
 	}
@@ -67,7 +67,17 @@ const Container = styled.div`
 		}
 		padding: 10px 1px 10px 1px;
 
+		@media(max-width: 600px) {
+			width: 100%
+		}
+
 	}
+
+	/* .arrow {
+		@media(max-width: 650px) {
+			display: none;
+		}
+	} */
 
 	.address {
 		padding: 20px 0;
@@ -98,9 +108,9 @@ const Container = styled.div`
 			display: flex;
 			justify-content: center;
 
-			@media(max-width: 600px) {
+			/* @media(max-width: 600px) {
 				display: none;
-			}
+			} */
 		}
 
 		h1 {
