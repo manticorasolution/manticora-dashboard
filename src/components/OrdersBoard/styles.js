@@ -53,9 +53,6 @@ const Container = styled.div`
 		display: flex;
 		flex-direction: column;
 		height: 100%;
-		/* width: 100%; */
-		/* overflow-x: scroll; */
-		/* overflow-y: visible !important; */
 		margin: 10px;
 
 	}
@@ -64,7 +61,6 @@ const Container = styled.div`
 			display: flex;
 			text-align: flex-start;
 			justify-content: flex-end;
-			/* flex-direction: column; */
 			height: 50vh;
 			width: 500px;
 			margin: 10px;

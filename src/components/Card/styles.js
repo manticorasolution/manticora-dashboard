@@ -73,12 +73,6 @@ const Container = styled.div`
 
 	}
 
-	/* .arrow {
-		@media(max-width: 650px) {
-			display: none;
-		}
-	} */
-
 	.address {
 		padding: 20px 0;
 		display: flex;
@@ -107,10 +101,6 @@ const Container = styled.div`
 		.avatar-parent {
 			display: flex;
 			justify-content: center;
-
-			/* @media(max-width: 600px) {
-				display: none;
-			} */
 		}
 
 		h1 {

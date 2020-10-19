@@ -12,7 +12,6 @@ const Container = styled.button`
 	font-size: 0.9rem;
 	font-weight: 600;
 	color: inherit;
-	/* box-shadow: 0 0 0 7px var(--light) inset; */
 `;
 
 export default Container;

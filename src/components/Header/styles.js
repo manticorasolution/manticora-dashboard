@@ -30,7 +30,6 @@ const HeaderLogo = styled.div`
 	
 	img {
 		cursor: pointer;
-		/* padding: 0 5px; */
 		height: 2.4rem;
 		margin-right: 10px;
 		
